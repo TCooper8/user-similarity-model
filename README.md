@@ -5,6 +5,7 @@
 Datasets:
   - Currently, you will need to add specific datasets to the project.
 
+```
 /user-similarity-model
   /datasets
     course_tags.csv
@@ -14,6 +15,7 @@ Datasets:
   /scripts ...
   /services ...
   docker-compose.yaml
+```
 
 The structure above is important for the datasets because it is declared as a volume mount in the docker-compose.
 
