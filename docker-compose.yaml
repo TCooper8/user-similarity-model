@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  ml:
+    build:
+      context: services/ML
+    volumes:
+      - ./datasets/:/datasets/
+    ports:
+      - 4000:80
+
+  ml-tests:
+    build:
+      context: services/ML
+      dockerfile: TestsDockerfile
+    volumes:
+      - ./datasets:/datasets/
